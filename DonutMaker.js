@@ -21,13 +21,16 @@ class DonutMaker {
     }
 
     addToAutoClickerCount() {
-        if (this. donutCount >= this.authoClickerCost){
-            this.autoClickerCount++
-            this.donutCount -= this.autoClickerCost;
+        if (this. donutCount >= this.autoClickerCost){
+            this.donutCount -= this.authoClickerCost;
+            this.autoClickerCount ++;
+            this.autoClickerCost = Math.round(this.autoClickCost * 1.1);
         }
     }
 
-    
-
-
+    activateAutoClickers() {
+        this.donutCount = this.donutCount + this.autoClickerCount;
+    }
 }
+
+export{DonutMaker};

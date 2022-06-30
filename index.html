@@ -4,10 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="container">
+      <header>
+          <nav>
+              <ul>
+                <li><button class="about__company">About Fred The Baker</button></li>
+                <a href="https://cookie-clicker.co/"><li><button class="cookie__clicker_link">Inspiration For The Game</button></li></a>
+                <li><button class="about__dev">About The Developer</button></li>
+              </ul>
+          </nav>
+      </header>
+      <div id="modal__one" class="modal__company">
+          <div class="company__modal_content">
+              <span class="close__company">&times;</span>
+              <h2>Welcome To Donut Maker! A game that was inspired by the classic and very addictive, Cookie Clicker!</h2>
+              <p>At Fred The Baker, we are all about dishing out donuts as fast as possible. </p>
+          </div>
+      </div>
+      <div id="modal__two" class="modal__developer">
+        <div class="developer__modal_content">
+          <span class="close__developer">&times;</span>
+          <h2>About The Creator</h2>
+          <p>Zachary Martin is a developer </p>
+          <a href="https://github.com/zm102905" class="gitHub"> Projects</a>
+          <a href="https://www.linkedin.com/in/zachary-d-martin/" class="linkedIn"> LinkedIn</a>
+      </div>
+      </div>
+      <h1>Donut Maker</h1>
+      <section class="main__button">
+          <button id="make__donut"><img src="donut.jpg" height="150" width="150"></button> 
+      </section>
+      <section class="donut__counter">
+          <h2>Donut Count<span id="donut__count">: 0</span></h2>
+      </section>
+      <section class="auto__clickers">
+          <button id="purchase__auto_clicker">Purchase Auto-Clicker</button>
+          <h2>Auto Clicker Count<span id="auto__clicker_count">: 0</span></h2>
+      </section>
+      <section class="donut__multipliers">
+          <button id="purchase__donut_multiplier">Purchase Donut-Multiplier</button>
+          <h2>Donut Multiplier Count<span id="donut__multiplier_count">: 0</span></h2>
+      </section>
+    </div>
   </body>
 </html>
