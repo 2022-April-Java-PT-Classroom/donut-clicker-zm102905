@@ -10,45 +10,104 @@
   <body>
     <div class="container">
       <header>
-          <nav>
-              <ul>
-                <li><button class="about__company">About Fred The Baker</button></li>
-                <a href="https://cookie-clicker.co/"><li><button class="cookie__clicker_link">Inspiration For The Game</button></li></a>
-                <li><button class="about__dev">About The Developer</button></li>
-              </ul>
-          </nav>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <button class='click1'>About Fred The Baker</button>
+            <a href="https://cookie-clicker.co/"><button class="cookie__clicker_link">Inspiration For The Game</button></a>
+            <button class='click2'>About The Creator</button>
+          </div>
+        </div>
       </header>
-      <div id="modal__one" class="modal__company">
-          <div class="company__modal_content">
-              <span class="close__company">&times;</span>
-              <h2>Welcome To Donut Maker! A game that was inspired by the classic and very addictive, Cookie Clicker!</h2>
+      <div class= "title__wrapper">
+      <h1 class="game__title">Donut Maker</h1>
+      </div>
+      <div class="modal1 display">
+          <div class="modal-content-1">
+              <p>Welcome To Donut Maker! A game inspired by the classic and very addictive, Cookie Clicker!</p>
               <p>At Fred The Baker, we are all about dishing out donuts as fast as possible. </p>
+              <p>Let's see how many donuts you can make!</p>
           </div>
       </div>
-      <div id="modal__two" class="modal__developer">
-        <div class="developer__modal_content">
-          <span class="close__developer">&times;</span>
-          <h2>About The Creator</h2>
-          <p>Zachary Martin is a developer </p>
+      <div class="modal2 display">
+        <div class="modal-content-2">
+          <p><span class="creator">About The Creator</span></p>
+          <img class="profile" src="profile.jpg" height="75" width="60">
+          <p>Zachary Martin is a
+                    Columbus-based full-stack
+                    software developer with a
+                    passion for travel, the
+                    outdoors,
+                    gardening, and technology. His
+                    passion for technology started
+                    very early, when he took an
+                    interest in
+                    gaming. In his early 20's, he
+                    built his first gaming pc, and later,
+                    computers for his father's law
+                    practice.
+                    From there, his interest in
+                    hardware and software design
+                    grew. Though his passion was in
+                    technology,
+                    it was his love for the outdoors
+                    and interest in life science
+                    that drove his to pursue a
+                    Bachelors degree
+                    in Biology at Ohio University,
+                    which he completed in 2009.
+                    After years of working in
+                    healthcare, Zach
+                    decided he wanted to turn his
+                    interest in technology into a
+                    career, and to leave his career
+                    in healthcare
+                    behind! Zach is
+                    enthusiastic about growing and
+                    gaining skill in software development, and is
+                    looking forward to a future in
+                    the field of IT! </p>
+        <section class="social">
           <a href="https://github.com/zm102905" class="gitHub"> Projects</a>
           <a href="https://www.linkedin.com/in/zachary-d-martin/" class="linkedIn"> LinkedIn</a>
+        </section>  
+        </div>
       </div>
+      <div class="click__wrapper">
+      <h2 class="click__donut">Click To Make Donuts</h2>
       </div>
-      <h1>Donut Maker</h1>
       <section class="main__button">
-          <button id="make__donut"><img src="donut.jpg" height="150" width="150"></button> 
+          <button id="make__donut"><img src="donut.jpg" height="200" width="200"></button> 
       </section>
+    <div class="count__purchase_wrapper">
+      <div>
       <section class="donut__counter">
-          <h2>Donut Count<span id="donut__count">: 0</span></h2>
+          <h2>Donut Count : <span id="donut__count">0</span></h2>
       </section>
       <section class="auto__clickers">
           <button id="purchase__auto_clicker">Purchase Auto-Clicker</button>
-          <h2>Auto Clicker Count<span id="auto__clicker_count">: 0</span></h2>
+          <h2>Auto Clicker Count : <span id="auto__clicker_count">0</span></h2>
       </section>
       <section class="donut__multipliers">
           <button id="purchase__donut_multiplier">Purchase Donut-Multiplier</button>
-          <h2>Donut Multiplier Count<span id="donut__multiplier_count">: 0</span></h2>
+          <h2>Donut Multiplier Count : <span id="donut__multiplier_count">0</span></h2>
+      </section>
+      <section class="reset__button">
+        <button id="reset">Reset</button> 
       </section>
     </div>
+    </div>
+    <div class="audio__wrapper">
+    <audio controls autoplay loop>
+      <source src="happy.mp3" type="audio/mpeg"/>
+    </audio>
+    </div>
+      <footer>
+        <div class="copyright">
+          &copy Zachary Martin 2022
+        </div>
+      </footer>
+    </div>
+    <script type="module"  src="./index.js"></script>
   </body>
 </html>
