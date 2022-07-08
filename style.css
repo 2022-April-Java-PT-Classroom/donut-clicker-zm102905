@@ -1,0 +1,247 @@
+
+
+html{
+    color: #000000;
+    font: 18px/1.618 sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-image: url("donutbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem auto;
+    max-width: 100rem;
+    width: 90%;
+    box-shadow: 10px 10px;
+    border:darkblue 5px solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    background-color: pink;
+    border:darkblue 5px solid;
+    margin-bottom:30px;
+}
+
+.dropbtn {
+  background-color:rgb(128, 78, 168);
+  padding: 16px;
+  font-size: 16px;
+  border:darkblue 5px solid;
+  border-radius: 10px;
+  color:aqua;
+  cursor:pointer;
+}
+
+.dropdown {
+  padding:15px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #583661;
+  border:darkblue 5px solid;
+  border-radius: 10px;
+}
+
+button {
+    background-color: aqua;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    cursor:pointer;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #583661;
+}
+
+.social{
+    display:flex;
+    flex-direction: column;
+}
+
+.title__wrapper {
+    display:flex;
+    justify-content: center;
+}
+
+.game__title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color: purple;
+    background-color: pink;
+    border:darkblue 5px solid;
+    border-radius: 70px;
+    padding:20px;
+}
+
+.click__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.click__donut {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: purple;
+    background-color: pink;
+    border:darkblue 5px solid;
+    margin-top: 30px;
+    border-radius: 50px;
+    padding:5px;
+}
+
+
+.main__button {
+    display:flex;
+    justify-content: center;
+    margin-top:30px;  
+}
+
+#make__donut {
+    border:darkblue 5px solid;
+}
+
+
+#make__donut {
+    cursor:pointer;
+}
+
+
+.count__purchase_wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.count__purchase_wrapper div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: purple;
+    margin-top:30px;
+    margin-bottom:60px;
+    background-color: pink;
+    border:darkblue 5px solid;
+    border-radius: 50px;
+    padding: 15px
+}
+
+footer {
+    background-color: pink;
+    border:darkblue 5px solid;
+}
+
+.display{
+    display: none;
+}
+
+.modal1 {
+  font-family:monospace;
+  font-size: 1em;
+  font-weight: bold;
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  border:darkblue 5px solid;
+  border-radius: 70px;
+}
+
+.modal2 {
+  font-family:monospace;
+  font-size: 1em;
+  font-weight: bold;
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  border:darkblue 5px solid;
+  border-radius: 70px;
+}
+
+.creator {
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile{
+    border:darkblue 3px solid;
+    border-radius: 10px;
+}
+
+.show1 {
+    display: block;
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+  }
+
+  .show2 {
+    display: block;
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+  }
+  
+  @keyframes fadeInOpacity {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  .audio__wrapper {
+      display:flex;
+      justify-content: center;
+      margin-bottom:20px;
+  }
+
+  audio {
+    border:darkblue 5px solid;
+    border-radius: 70px;
+  }
+
+  .copyright {
+      padding-left:15px;
+  }
+
+  
+ 
